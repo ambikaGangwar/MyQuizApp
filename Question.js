@@ -1,4 +1,4 @@
-class Question {
+ class Question {
 
   constructor() {
     this.title = createElement('h1')
@@ -14,8 +14,8 @@ class Question {
 
   hide(){
     this.title.hide();
-    this.input1.hide();
     this.button.hide();
+    this.input1.hide();
     this.input2.hide();
   }
 
@@ -38,7 +38,9 @@ class Question {
     this.button.position(290, 300);
 
     this.button.mousePressed(()=>{
-      
+      this.title.hide();
+      this.input1.hide();
+      this.input2.hide();
       this.button.hide();
       contestant.name = this.input1.value();
       contestant.answer = this.input2.value();
