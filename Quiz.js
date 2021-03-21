@@ -1,4 +1,4 @@
-class Quiz {
+ class Quiz {
   constructor(){}
 
   getState(){
@@ -29,11 +29,11 @@ class Quiz {
   }
 
   play(){
-    
+    question.hide();
     background("Yellow");
     fill(0);
     textSize(30);
-    text("Result of the Quiz",40, 450);
+    text("Result of the Quiz",340, 50);
     text("----------------------------",320, 65);
 
 
@@ -41,10 +41,10 @@ class Quiz {
    
     if(allContestants !== undefined){
       debugger;
-      var display_Answers = 530;
+      var display_Answers = 230;
       fill("Blue");
       textSize(20);
-      text("*NOTE: Contestant who answered correct are highlighted in green color!",130,490);
+      text("*NOTE: Contestant who answered correct are highlighted in green color!",130,230);
 
       for(var plr in allContestants){
         debugger;
